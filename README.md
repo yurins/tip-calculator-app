@@ -1,6 +1,7 @@
 # tip-calculator-app
 
-This is a solution to the [Tip Calculator App challenge on Frontend Mentor] https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
+This is a solution to the [Tip Calculator App challenge on Frontend Mentor] 
+https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 
 ## 🔗 Live Preview
 
