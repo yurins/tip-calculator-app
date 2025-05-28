@@ -1,10 +1,10 @@
 # tip-calculator-app
 
-This is a solution to the [Tip Calculator App challenge on Frontend Mentor] 
+This is a solution to the [Tip Calculator App challenge on Frontend Mentor] https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 
 ## 🔗 Live Preview
 
-[View live site]
+[View live site] https://yurins-tip-calculator-app.netlify.app/
 
 ## 🛠️ Built With
 
