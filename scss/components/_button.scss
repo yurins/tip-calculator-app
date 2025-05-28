@@ -1,0 +1,41 @@
+@use '../utility/index' as utility;
+
+.tip-button {
+    padding: 1rem;
+    border-radius: .313rem;
+    border: none;
+    background-color: utility.$darkGreen;
+    color: utility.$white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    &:hover {
+        background-color: utility.$lightGreen;
+    }
+}
+
+.customInput {
+    width: 100%;
+    border-radius: .313rem;
+    background-color: utility.$whiteGray;
+    border: none;
+    text-align: center;
+    &::placeholder {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: utility.$mediumDarkGray;
+    }
+}
+
+.reset {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .313rem;
+    border: none;
+    background-color: utility.$mediumGreen;
+    color: utility.$mediumDarkGreen;
+    font-size: 1.5rem;
+    font-weight: 800;
+    &:hover {
+        background-color: utility.$lightGreen;
+    }
+}

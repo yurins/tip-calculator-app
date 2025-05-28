@@ -1,0 +1,350 @@
+/*variables.scss*/
+.bill_input,
+.person_input {
+  margin: 0.5rem 0 2rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.313rem;
+  background-color: #F3F9FA;
+  border: none;
+}
+.bill_input::-moz-placeholder, .person_input::-moz-placeholder {
+  color: #00474B;
+  opacity: 35%;
+  font-weight: 800;
+}
+.bill_input::placeholder,
+.person_input::placeholder {
+  color: #00474B;
+  opacity: 35%;
+  font-weight: 800;
+}
+
+.bill_container img {
+  position: absolute;
+  height: 1.5rem;
+  top: 2.6rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.people img {
+  position: absolute;
+  height: 1.5rem;
+  top: 2.6rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.tip-button {
+  padding: 1rem;
+  border-radius: 0.313rem;
+  border: none;
+  background-color: #00474B;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.tip-button:hover {
+  background-color: #26C2AE;
+}
+
+.customInput {
+  width: 100%;
+  border-radius: 0.313rem;
+  background-color: #F3F9FA;
+  border: none;
+  text-align: center;
+}
+.customInput::-moz-placeholder {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #547878;
+}
+.customInput::placeholder {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #547878;
+}
+
+.reset {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.313rem;
+  border: none;
+  background-color: #0D686D;
+  color: #085C61;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.reset:hover {
+  background-color: #26C2AE;
+}
+
+.bill_container p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5E7A7D;
+}
+
+.bill_input,
+.person_input {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.tip_container p {
+  font-size: 1rem;
+  color: #5E7A7D;
+  font-weight: 600;
+}
+
+.people p {
+  font-size: 1rem;
+  color: #5E7A7D;
+  font-weight: 600;
+}
+
+.per-person {
+  color: #7F9D9F;
+  font-size: 0.813rem;
+}
+
+.amount {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.error-message {
+  display: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #E17052;
+  margin-top: 0.5rem;
+}
+
+.result_content,
+.total_display {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #26C2AE;
+}
+@media screen and (min-width: 80rem) {
+  .result_content,
+  .total_display {
+    font-size: 3rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*font-family: utility.$font;*/
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #C5E4E7;
+  min-height: 100vh;
+}
+
+main {
+  overflow: hidden;
+}
+
+.calculator {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  margin: 3.125rem auto;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  main {
+    max-width: 57.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.calculator {
+  padding: 2rem 1.5rem;
+  border-radius: 1.563rem;
+}
+@media screen and (min-width: 48rem) {
+  .calculator {
+    padding: 5rem 3rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+  }
+}
+
+.bill_container,
+.people {
+  position: relative;
+}
+
+.bill_input,
+.person_input {
+  width: 100%;
+  text-align: end;
+  position: relative;
+  z-index: 2;
+}
+
+.tip_container p {
+  padding-bottom: 0.5rem;
+}
+
+.tip-button_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 48rem) {
+  .tip-button_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.result_container {
+  background-color: #00474B;
+  border-radius: 0.938rem;
+  padding: 1.5rem;
+}
+
+.result_display,
+.total_display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result_display {
+  margin-bottom: 2rem;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.people p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.reset-button_container {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 80rem) {
+  .result_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=style.css.map */

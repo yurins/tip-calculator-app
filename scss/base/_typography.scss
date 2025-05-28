@@ -1,0 +1,60 @@
+@use '../utility/index' as utility;
+
+.bill_container {
+    p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: utility.$lightDarkGray;
+    }    
+}
+
+.bill_input,
+.person_input {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.tip_container {
+    p {
+        font-size: 1rem;
+        color: utility.$lightDarkGray;
+        font-weight: 600;
+    }
+}
+
+.people {
+    p {
+        font-size: 1rem;
+        color: utility.$lightDarkGray;
+        font-weight: 600;
+    }
+}
+
+.per-person {
+    color: utility.$gray;
+    font-size: 0.813rem;
+}
+
+.amount {
+    font-size: 1rem;
+    color: utility.$white;
+}
+
+.error-message {
+    display: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: utility.$orange;
+    margin-top: 0.5rem;
+}
+
+.result_content,
+.total_display {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: utility.$lightGreen;
+    @include utility.desktop {
+        font-size: 3rem;
+    }
+}

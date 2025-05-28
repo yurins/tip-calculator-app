@@ -1,0 +1,11 @@
+@use '../utility/index' as utility;
+.tip-button {
+  padding: 1rem;
+  border-radius: .313rem;
+  border: none;
+}
+
+.customInput {
+  width: 100%;
+  border-radius: .313rem;
+}

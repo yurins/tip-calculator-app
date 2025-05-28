@@ -1,0 +1,39 @@
+@use '../utility/index' as utility;
+
+.bill_input,
+.person_input {
+    margin: .5rem 0 2rem 0;
+    padding: .5rem 1rem;
+    border-radius: .313rem;
+    background-color: utility.$whiteGray;
+    border: none;
+    &::placeholder {
+        color: utility.$darkGreen;
+        opacity: 35%;
+        font-weight: 800;
+    }
+}
+
+.bill_container {
+    img {
+        position: absolute;
+        height: 1.5rem;
+        top: 2.6rem;
+        left: 1rem;  
+        z-index: 1;
+
+    }
+}
+
+.people {
+    img {
+        position: absolute;
+        height: 1.5rem;
+        top: 2.6rem;
+        left: 1rem;
+        z-index: 1;
+    }
+}
+
+
+

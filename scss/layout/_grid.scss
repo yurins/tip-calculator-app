@@ -1,0 +1,108 @@
+@use '../utility/_index' as utility;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    margin: 3.125rem auto;
+}
+
+main {
+    @include utility.tablet {
+        padding: 0 5rem;
+    }
+    @include utility.desktop {
+        max-width: 57.5rem;    
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.calculator {
+    padding: 2rem 1.5rem;
+    border-radius: 1.563rem;
+    @include utility.tablet {
+        padding: 5rem 3rem;
+    }
+    @include utility.desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+.bill_container,
+.people {
+    position: relative;
+}
+
+.bill_input,
+.person_input {
+    width: 100%;
+    text-align: end;
+    position: relative;
+    z-index: 2;
+}
+
+.tip_container {
+    p {
+        padding-bottom: .5rem;
+    }
+}
+
+.tip-button_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    @include utility.tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.result_container {
+    background-color: utility.$darkGreen;
+    border-radius: 0.938rem;
+    padding: 1.5rem;
+}
+
+.result_display,
+.total_display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result_display {
+    margin-bottom: 2rem;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    p{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.reset-button_container {
+    margin-top: 2rem;
+}
+
+.result_container {
+    @include utility.desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
